@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>Structerm</title>
+    <style>
+    body { font: 13px Segoe UI, Arial; line-height: 1.4em; }
+    pre { background: #ddd; font: 12px Consolas, Courier New; }
+    </style>
+
+    <script src="doT.js"></script>
+    <script src="structerm.js"></script>
+
+    <script id="template_ps" type="text/html" src="plugins/ps/ps.html">
+    <div>
+    <h3>{{=it.pid}} {{=it.name}}</h3>
+    <span>{{=it.cmdline}}</span>
+    </div>
+</script>
+    <script src="plugins/ps/ps.js"></script>
+</head>
+<body>
+
+<input type="text" id="commandBar" />
+
+<div id="outputs"></div>
+
+</body>
+</html>
