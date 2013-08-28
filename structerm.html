@@ -3,16 +3,15 @@
 <head>
     <meta charset=utf-8>
     <title>Structerm</title>
-    <style>
-    body { font: 13px Segoe UI, Arial; line-height: 1.4em; }
-    pre { background: #ddd; font: 12px Consolas, Courier New; }
-    </style>
+
+    <link rel="stylesheet" href="structerm.css"></link>
 
     <script src="doT.js"></script>
     <script src="structerm.js"></script>
 
     <script id="template_ps" type="text/html" src="plugins/ps/ps.html">
     <div>
+    <input type="hidden" value="{{=it.pid}}" class="pid" />
     <h3>{{=it.pid}} {{=it.name}}</h3>
     <span>{{=it.cmdline}}</span>
     </div>

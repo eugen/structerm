@@ -1,0 +1,11 @@
+body { 
+    font: 13px Segoe UI, Arial; 
+    line-height: 1.4em; }
+pre { 
+    background: #ddd; 
+    font: 12px Consolas, Courier New; 
+}
+#commandBar {
+    position: fixed;
+    bottom: 0;
+}
